@@ -6,8 +6,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Component {...pageProps} />
-      <Script src="/webOSTVjs-1.2.4/webOSTV-dev.js" id="dev" />
-      <Script src="/webOSTVjs-1.2.4/webOSTV.js" id="prod" />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/dalalRohit/nextjs-lg-webos-demo@dev/public/webOSTVjs-1.2.4/webOSTV-dev.js"
+        id="webos-dev"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/dalalRohit/nextjs-lg-webos-demo@dev/public/webOSTVjs-1.2.4/webOSTV.js"
+        id="webos"
+      />
     </div>
   );
 }
